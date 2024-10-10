@@ -97,9 +97,14 @@ export const ExchangeIconIcon = () => {
   return (
     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M17.1673 14.1667H3.83398M3.83398 14.1667L7.16732 10.8333M3.83398 14.1667L7.16732 17.5M3.83398 5.83333H17.1673M17.1673 5.83333L13.834 2.5M17.1673 5.83333L13.834 9.16667" stroke="#001F1D" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
-    
-    
-    
+    </svg>  
+  );
+};
+export const CrossIcon = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x">
+          <path d="M18 6L6 18" />
+          <path d="M6 6l12 12" />
+        </svg>
   );
 };

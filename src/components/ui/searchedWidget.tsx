@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
-import { SearchIcon } from "@/components/icon/Icon";
+import { CrossIcon, SearchIcon } from "@/components/icon/Icon";
 import SearchWidget from '@/components/ui/searchWidget';
 import { Card } from './card';
 import { useSearchParams } from 'next/navigation';
@@ -68,7 +68,7 @@ const SearchedWidget: React.FC<SearchedWidgetProps> = ({ setLoading }) => {
 
     <div className="flex justify-between items-center">
       {/* Displayed search widget info */}
-      <div className="searched-widget border border-[#E6E8EB] rounded-full p-2 px-4 w-fit flex items-center gap-5">
+      <div className="searched-widget border border-[#E6E8EB] rounded-full p-2 px-4 w-fit flex items-center gap-5 cursor-pointer" onClick={() => setShowSearchForm(true)}>
         <div className="flex text-[16px] gap-1 border-r pe-5 border-[#E6E8EB]">
           <p className="font-medium">{fromValue}</p>
           <p className="font-[400] text-[#787B80] w-fit truncate">{getPlaceName(fromValue)}</p>
@@ -84,17 +84,14 @@ const SearchedWidget: React.FC<SearchedWidgetProps> = ({ setLoading }) => {
         </div>
 
         {/* Button to open the search form */}
-        <Button variant={"secondary"} className="rounded-full text-dark px-[8px] bg-[#E5EBEB]" onClick={() => setShowSearchForm(true)}>
+        <Button variant={"secondary"} className="rounded-full text-dark px-[8px] bg-[#E5EBEB]" >
           <SearchIcon fill='#003E39' />
         </Button>
       </div>
 
       {/* Button to close the form */}
       <Button variant={"secondary"} className="rounded-full text-dark h-10 p-[8px]" onClick={() => setShowSearchForm(false)}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x">
-          <path d="M18 6L6 18" />
-          <path d="M6 6l12 12" />
-        </svg>
+     <CrossIcon />
       </Button>
 
       {/* Search form */}

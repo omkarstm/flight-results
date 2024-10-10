@@ -11,7 +11,8 @@
           "duration": "7h 00min",
           "stops": "Non stop",
           "logo": "EMIRATES_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Thu 25 Jun",
+          "stopDetails": "3h 45m in Lisbon"
         },
         {
           "airline": "Lufthansa",
@@ -23,7 +24,8 @@
           "duration": "7h 10min",
           "stops": "Non stop",
           "logo": "LUFTHANASA_IMG",
-          "date": "Fri 26 Jun"
+          "date": "Fri 26 Jun",
+          "stopDetails": "2h 20m in Paris"
         }
       ],
       "price": "AED 2,456.90"
@@ -39,7 +41,8 @@
           "duration": "11h 00min",
           "stops": "Non stop",
           "logo": "EMIRATES_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Thu 25 Jun",
+          "stopDetails": "5h 50m in Paris"
         },
         {
           "airline": "Lufthansa",
@@ -50,7 +53,8 @@
           "duration": "10h 30min",
           "stops": "Non stop",
           "logo": "LUFTHANASA_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Thu 25 Jun",
+          "stopDetails": "1h 35m in Lisbon"
         }
       ],
       "price": "AED 3,500.00"
@@ -66,7 +70,8 @@
           "duration": "8h 00min",
           "stops": "Non stop",
           "logo": "EMIRATES_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Thu 25 Jun",
+          "stopDetails": "4h 10m in Paris"
         },
         {
           "airline": "Lufthansa",
@@ -78,7 +83,8 @@
           "duration": "7h 00min",
           "stops": "Non stop",
           "logo": "LUFTHANASA_IMG",
-          "date": "Fri 26 Jun"
+          "date": "Fri 26 Jun",
+          "stopDetails": "3h 20m in Lisbon"
         }
       ],
       "price": "AED 4,000.00"
@@ -94,7 +100,8 @@
           "duration": "16h 00min",
           "stops": "Non stop",
           "logo": "EMIRATES_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Thu 25 Jun",
+          "stopDetails": "2h 40m in Lisbon"
         },
         {
           "airline": "Lufthansa",
@@ -105,7 +112,8 @@
           "duration": "16h 00min",
           "stops": "Non stop",
           "logo": "LUFTHANASA_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Thu 25 Jun",
+          "stopDetails": "4h 10m in Paris"
         }
       ],
       "price": "AED 5,500.00"
@@ -121,7 +129,8 @@
           "duration": "14h 00min",
           "stops": "Non stop",
           "logo": "EMIRATES_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Thu 25 Jun",
+          "stopDetails": "6h 15m in Lisbon"
         },
         {
           "airline": "Lufthansa",
@@ -133,7 +142,8 @@
           "duration": "13h 00min",
           "stops": "Non stop",
           "logo": "LUFTHANASA_IMG",
-          "date": "Fri 26 Jun"
+          "date": "Fri 26 Jun",
+          "stopDetails": "5h 30m in Paris"
         }
       ],
       "price": "AED 6,000.00"
@@ -149,7 +159,8 @@
           "duration": "7h 00min",
           "stops": "Non stop",
           "logo": "EMIRATES_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Thu 25 Jun",
+          "stopDetails": "3h 25m in Lisbon"
         },
         {
           "airline": "Lufthansa",
@@ -161,7 +172,8 @@
           "duration": "7h 00min",
           "stops": "Non stop",
           "logo": "LUFTHANASA_IMG",
-          "date": "Fri 26 Jun"
+          "date": "Fri 26 Jun",
+          "stopDetails": "2h 50m in Paris"
         }
       ],
       "price": "AED 2,000.00"
@@ -177,7 +189,8 @@
           "duration": "3h 00min",
           "stops": "Non stop",
           "logo": "EMIRATES_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Thu 25 Jun",
+          "stopDetails": "5h 45m in Lisbon"
         },
         {
           "airline": "Lufthansa",
@@ -188,7 +201,8 @@
           "duration": "3h 00min",
           "stops": "Non stop",
           "logo": "LUFTHANASA_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Thu 25 Jun",
+          "stopDetails": "3h 10m in Paris"
         }
       ],
       "price": "AED 1,456.90"
@@ -204,7 +218,8 @@
           "duration": "16h 00min",
           "stops": "Non stop",
           "logo": "EMIRATES_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Thu 25 Jun",
+          "stopDetails": "4h 00m in Lisbon"
         },
         {
           "airline": "Lufthansa",
@@ -215,7 +230,37 @@
           "duration": "15h 00min",
           "stops": "Non stop",
           "logo": "LUFTHANASA_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Thu 25 Jun",
+          "stopDetails": "6h 05m in Paris"
+        }
+      ],
+      "price": "AED 4,500.00"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "EK 678",
+          "departureTime": "9:00 AM",
+          "arrivalTime": "11:00 AM",
+          "route": "MEX - CDG",
+          "duration": "16h 00min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "3h 45m in Lisbon"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "LH 123",
+          "departureTime": "1:30 PM",
+          "arrivalTime": "10:30 PM",
+          "route": "CDG - HND",
+          "duration": "15h 00min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "4h 50m in Paris"
         }
       ],
       "price": "AED 4,500.00"
@@ -231,18 +276,223 @@
           "duration": "16h 00min",
           "stops": "Non stop",
           "logo": "EMIRATES_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Thu 25 Jun",
+          "stopDetails": "2h 50m in Lisbon"
         },
         {
           "airline": "Lufthansa",
           "flightNumber": "LH 123",
           "departureTime": "1:30 PM",
           "arrivalTime": "10:30 PM",
-          "route": "CDG - HND",
+          "route": "MEX - DXB",
           "duration": "15h 00min",
           "stops": "Non stop",
           "logo": "LUFTHANASA_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Thu 25 Jun",
+          "stopDetails": "6h 00m in Paris"
+        }
+      ],
+      "price": "AED 4,500.00"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "EK 678",
+          "departureTime": "9:00 AM",
+          "arrivalTime": "11:00 AM",
+          "route": "MEX - LAX",
+          "duration": "16h 00min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "3h 30m in Lisbon"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "LH 123",
+          "departureTime": "1:30 PM",
+          "arrivalTime": "10:30 PM",
+          "route": "LAX - MEX",
+          "duration": "15h 00min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "5h 25m in Paris"
+        }
+      ],
+      "price": "AED 4,500.00"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "EK 678",
+          "departureTime": "9:00 AM",
+          "arrivalTime": "11:00 AM",
+          "route": "MEX - LAX",
+          "duration": "16h 00min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "3h 30m in Lisbon"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "LH 123",
+          "departureTime": "1:30 PM",
+          "arrivalTime": "10:30 PM",
+          "route": "LAX - MEX",
+          "duration": "15h 00min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "5h 25m in Paris"
+        }
+      ],
+      "price": "AED 4,500.00"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "EK 678",
+          "departureTime": "9:00 AM",
+          "arrivalTime": "11:00 AM",
+          "route": "MEX - JFK",
+          "duration": "16h 00min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "6h 32m in Lisbon"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "LH 123",
+          "departureTime": "1:30 PM",
+          "arrivalTime": "10:30 PM",
+          "route": "JFK - MEX",
+          "duration": "15h 00min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "4h 20m in Paris"
+        }
+      ],
+      "price": "AED 4,500.00"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "EK 678",
+          "departureTime": "9:00 AM",
+          "arrivalTime": "11:00 AM",
+          "route": "MEX - HND",
+          "duration": "16h 00min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "6h 32m in Lisbon"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "LH 123",
+          "departureTime": "1:30 PM",
+          "arrivalTime": "10:30 PM",
+          "route": "HND - MEX",
+          "duration": "15h 00min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "4h 20m in Paris"
+        }
+      ],
+      "price": "AED 4,500.00"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "EK 678",
+          "departureTime": "9:00 AM",
+          "arrivalTime": "11:00 AM",
+          "route": "MEX - DXB",
+          "duration": "16h 00min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "6h 32m in Lisbon"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "LH 123",
+          "departureTime": "1:30 PM",
+          "arrivalTime": "10:30 PM",
+          "route": "DXB - MEX",
+          "duration": "15h 00min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "4h 20m in Paris"
+        }
+      ],
+      "price": "AED 4,500.00"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "EK 678",
+          "departureTime": "9:00 AM",
+          "arrivalTime": "11:00 AM",
+          "route": "MEX - JFK",
+          "duration": "16h 00min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "6h 32m in Lisbon"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "LH 123",
+          "departureTime": "1:30 PM",
+          "arrivalTime": "10:30 PM",
+          "route": "JFK - MEX",
+          "duration": "15h 00min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "4h 20m in Paris"
+        }
+      ],
+      "price": "AED 4,500.00"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "EK 678",
+          "departureTime": "9:00 AM",
+          "arrivalTime": "11:00 AM",
+          "route": "HND - JFK",
+          "duration": "16h 00min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "6h 32m in Lisbon"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "LH 123",
+          "departureTime": "1:30 PM",
+          "arrivalTime": "10:30 PM",
+          "route": "JFK - HND",
+          "duration": "15h 00min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Thu 25 Jun",
+          "stopDetails": "4h 20m in Paris"
         }
       ],
       "price": "AED 4,500.00"
