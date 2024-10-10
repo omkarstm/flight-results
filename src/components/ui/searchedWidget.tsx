@@ -71,12 +71,12 @@ const SearchedWidget: React.FC<SearchedWidgetProps> = ({ setLoading }) => {
       <div className="searched-widget border border-[#E6E8EB] rounded-full p-2 px-4 w-fit flex items-center gap-5">
         <div className="flex text-[16px] gap-1 border-r pe-5 border-[#E6E8EB]">
           <p className="font-medium">{fromValue}</p>
-          <p className="font-[400] text-[#787B80] w-[150px] truncate">{getPlaceName(fromValue)}</p>
+          <p className="font-[400] text-[#787B80] w-fit truncate">{getPlaceName(fromValue)}</p>
         </div>
 
         <div className="flex text-[16px] gap-1 border-r pe-5 border-[#E6E8EB]">
           <p className="font-medium">{toValue}</p>
-          <p className="font-[400] text-[#787B80] w-[150px] truncate">{getPlaceName(toValue)}</p>
+          <p className="font-[400] text-[#787B80] w-fit truncate">{getPlaceName(toValue)}</p>
         </div>
 
         <div className="flex text-[16px] gap-1 border-r pe-5 border-[#E6E8EB]">

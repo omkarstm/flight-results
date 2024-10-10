@@ -20,9 +20,13 @@ export default function Home() {
         <div className="wrapper h-screen">
           <div className="card-container">
             <div className="head-section">
-              <div className="heading-container">
+              <div className="heading-container relative">
+                <div className="vertical-line ms-8"></div>
                 <h1 className="text-[36px] font-[400]">Good afternoon, Brian</h1>
+                <div className="vertical-line ms-8 absolute right-[-35px]"></div>
               </div>
+
+             
             </div>
             <Card className="p-5">
               <Button variant={"secondary"}>Flights</Button>
