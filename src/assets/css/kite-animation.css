@@ -1,0 +1,22 @@
+/* Animation for the kite (Landing and Takeoff) */
+.kite-animated {
+    animation: kiteMovement 10s ease-in-out infinite; /* Set timing and easing */
+}
+
+@keyframes kiteMovement {
+    0% {
+        transform: translateY(0) rotate(0deg); /* Start position */
+    }
+    20% {
+        transform: translateY(25px) rotate(35deg); /* Tilt right and down */
+    }
+  50%{
+    transform: translateY(-20px) rotate(-30deg);
+  }
+  70%{
+    transform: translateY(0px) rotate(-10deg);
+  }
+}
+
+
+

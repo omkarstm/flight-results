@@ -1,0 +1,118 @@
+{
+  "flights": [
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "AT 4334",
+          "departureTime": "9:45 AM",
+          "arrivalTime": "11:45 AM",
+          "route": "CDG - DXB",
+          "duration": "2h 10min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "AT 4334",
+          "departureTime": "11:45 PM",
+          "arrivalTime": "6:45 AM",
+          "arrivalOffset": "+1 day",
+          "route": "DXB - CDG",
+          "duration": "4h 10min",
+          "stops": "2 stops",
+          "stopDetails": "6h 32m in Lisbon, Paris ",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Thu 25 Jun"
+        }
+      ],
+      "price": "AED 2,456.90"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "AT 4334",
+          "departureTime": "9:45 AM",
+          "arrivalTime": "11:45 AM",
+          "route": "CDG - DXB",
+          "duration": "7h 10min",
+          "stops": "1 stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "AT 4334",
+          "departureTime": "11:45 PM",
+          "arrivalTime": "6:45 AM",
+          "arrivalOffset": "+1 day",
+          "route": "DXB - CDG",
+          "duration": "4h 10min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA2_IMG",
+          "date": "Thu 25 Jun"
+        }
+      ],
+      "price": "AED 1,456.90"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "AT 4334",
+          "departureTime": "9:45 AM",
+          "arrivalTime": "11:45 AM",
+          "route": "CDG - DXB",
+          "duration": "2h 10min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "AT 4334",
+          "departureTime": "11:45 PM",
+          "arrivalTime": "6:45 AM",
+          "arrivalOffset": "+1 day",
+          "route": "DXB - CDG",
+          "duration": "4h 10min",
+          "stops": "2 stops",
+          "stopDetails": "6h 32m in Lisbon, Paris ",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Thu 25 Jun"
+        }
+      ],
+      "price": "AED 2,456.90"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "AT 4334",
+          "departureTime": "9:45 AM",
+          "arrivalTime": "11:45 AM",
+          "route": "CDG - DXB",
+          "duration": "7h 10min",
+          "stops": "1 stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "AT 4334",
+          "departureTime": "11:45 PM",
+          "arrivalTime": "6:45 AM",
+          "arrivalOffset": "+1 day",
+          "route": "DXB - CDG",
+          "duration": "4h 10min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA2_IMG",
+          "date": "Thu 25 Jun"
+        }
+      ],
+      "price": "AED 1,456.90"
+    }
+  ]
+}
