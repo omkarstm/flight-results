@@ -3,6 +3,9 @@ import { Button } from '@/components/ui/button';
 import { SearchIcon } from "@/components/icon/Icon";
 import SearchWidget from '@/components/ui/searchWidget';
 import { Card } from './card';
+import { useSearchParams } from 'next/navigation';
+import airports from "../../app/flightresult/airports.json"
+import moment from 'moment';
 
 interface SearchedWidgetProps {
   loading: boolean;
@@ -10,6 +13,7 @@ interface SearchedWidgetProps {
 }
 
 const SearchedWidget: React.FC<SearchedWidgetProps> = ({ setLoading }) => {
+  const searchParams = useSearchParams();
   const [showSearchForm, setShowSearchForm] = useState<boolean>(false);
   const [interactingWithWidget, setInteractingWithWidget] = useState<boolean>(false);
   // State for search widget
@@ -20,6 +24,18 @@ const SearchedWidget: React.FC<SearchedWidgetProps> = ({ setLoading }) => {
 
   // Ref for the entire form and widget to handle clicks outside
   const formRef = useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    setFromValue(searchParams.get('from') || '')
+    setToValue(searchParams.get('to') || '')
+    setReturnDate(new Date(Number(searchParams.get('returnDate'))))
+    setDepartureDate(new Date(Number(searchParams.get('departureDate'))));
+  }, [])
+
+  const getPlaceName = (code: string) => {
+    if (code) return airports.find((airport) => airport.code === code)?.name
+    else return ""
+  }
 
   // Close the form if clicking outside, but don't close if interacting with the widget
   useEffect(() => {
@@ -44,26 +60,27 @@ const SearchedWidget: React.FC<SearchedWidgetProps> = ({ setLoading }) => {
     };
   }, [showSearchForm, interactingWithWidget]);
 
-  const handle = (value:boolean) =>{
+  const handle = (value: boolean) => {
     console.log("Intracting", value);
   }
 
   return (
+
     <div className="flex justify-between items-center">
       {/* Displayed search widget info */}
       <div className="searched-widget border border-[#E6E8EB] rounded-full p-2 px-4 w-fit flex items-center gap-5">
         <div className="flex text-[16px] gap-1 border-r pe-5 border-[#E6E8EB]">
-          <p className="font-medium">CDG</p>
-          <p className="font-[400] text-[#787B80] w-[150px] truncate">Paris Charles De Gaulle</p>
+          <p className="font-medium">{fromValue}</p>
+          <p className="font-[400] text-[#787B80] w-[150px] truncate">{getPlaceName(fromValue)}</p>
         </div>
 
         <div className="flex text-[16px] gap-1 border-r pe-5 border-[#E6E8EB]">
-          <p className="font-medium">DXB</p>
-          <p className="font-[400] text-[#787B80] w-[150px] truncate">Dubai International Airport</p>
+          <p className="font-medium">{toValue}</p>
+          <p className="font-[400] text-[#787B80] w-[150px] truncate">{getPlaceName(toValue)}</p>
         </div>
 
         <div className="flex text-[16px] gap-1 border-r pe-5 border-[#E6E8EB]">
-          <p className="font-medium w-[100px] truncate">Jun 25 - Jul 2</p>
+          <p className="font-medium w-fit truncate">{moment(departureDate).format('MMM D')} - {moment(returnDate).format('MMM D')}</p>
         </div>
 
         {/* Button to open the search form */}

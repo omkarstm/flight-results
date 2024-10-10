@@ -4,27 +4,26 @@
       "segments": [
         {
           "airline": "Emirates",
-          "flightNumber": "AT 4334",
+          "flightNumber": "EK 123",
           "departureTime": "9:45 AM",
           "arrivalTime": "11:45 AM",
           "route": "CDG - DXB",
-          "duration": "2h 10min",
+          "duration": "7h 00min",
           "stops": "Non stop",
           "logo": "EMIRATES_IMG",
           "date": "Thu 25 Jun"
         },
         {
           "airline": "Lufthansa",
-          "flightNumber": "AT 4334",
+          "flightNumber": "LH 456",
           "departureTime": "11:45 PM",
           "arrivalTime": "6:45 AM",
           "arrivalOffset": "+1 day",
           "route": "DXB - CDG",
-          "duration": "4h 10min",
-          "stops": "2 stops",
-          "stopDetails": "6h 32m in Lisbon, Paris ",
+          "duration": "7h 10min",
+          "stops": "Non stop",
           "logo": "LUFTHANASA_IMG",
-          "date": "Thu 25 Jun"
+          "date": "Fri 26 Jun"
         }
       ],
       "price": "AED 2,456.90"
@@ -33,25 +32,162 @@
       "segments": [
         {
           "airline": "Emirates",
-          "flightNumber": "AT 4334",
-          "departureTime": "9:45 AM",
-          "arrivalTime": "11:45 AM",
-          "route": "CDG - DXB",
-          "duration": "7h 10min",
-          "stops": "1 stop",
+          "flightNumber": "EK 789",
+          "departureTime": "10:00 AM",
+          "arrivalTime": "12:00 PM",
+          "route": "CDG - LAX",
+          "duration": "11h 00min",
+          "stops": "Non stop",
           "logo": "EMIRATES_IMG",
           "date": "Thu 25 Jun"
         },
         {
           "airline": "Lufthansa",
-          "flightNumber": "AT 4334",
-          "departureTime": "11:45 PM",
-          "arrivalTime": "6:45 AM",
-          "arrivalOffset": "+1 day",
-          "route": "DXB - CDG",
-          "duration": "4h 10min",
+          "flightNumber": "LH 321",
+          "departureTime": "12:30 PM",
+          "arrivalTime": "8:00 PM",
+          "route": "LAX - CDG",
+          "duration": "10h 30min",
           "stops": "Non stop",
-          "logo": "LUFTHANASA2_IMG",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Thu 25 Jun"
+        }
+      ],
+      "price": "AED 3,500.00"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "EK 234",
+          "departureTime": "9:00 AM",
+          "arrivalTime": "5:00 PM",
+          "route": "CDG - JFK",
+          "duration": "8h 00min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "LH 789",
+          "departureTime": "7:00 PM",
+          "arrivalTime": "5:00 AM",
+          "arrivalOffset": "+1 day",
+          "route": "JFK - CDG",
+          "duration": "7h 00min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Fri 26 Jun"
+        }
+      ],
+      "price": "AED 4,000.00"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "EK 123",
+          "departureTime": "9:45 AM",
+          "arrivalTime": "11:45 AM",
+          "route": "DXB - LAX",
+          "duration": "16h 00min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "LH 543",
+          "departureTime": "2:00 PM",
+          "arrivalTime": "10:00 PM",
+          "route": "LAX - DXB",
+          "duration": "16h 00min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Thu 25 Jun"
+        }
+      ],
+      "price": "AED 5,500.00"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "EK 431",
+          "departureTime": "8:00 AM",
+          "arrivalTime": "4:00 PM",
+          "route": "DXB - JFK",
+          "duration": "14h 00min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "LH 987",
+          "departureTime": "6:00 PM",
+          "arrivalTime": "3:00 AM",
+          "arrivalOffset": "+1 day",
+          "route": "JFK - DXB",
+          "duration": "13h 00min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Fri 26 Jun"
+        }
+      ],
+      "price": "AED 6,000.00"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "EK 345",
+          "departureTime": "7:30 AM",
+          "arrivalTime": "9:30 AM",
+          "route": "DXB - CDG",
+          "duration": "7h 00min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "LH 657",
+          "departureTime": "10:00 PM",
+          "arrivalTime": "5:00 AM",
+          "arrivalOffset": "+1 day",
+          "route": "CDG - DXB",
+          "duration": "7h 00min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA_IMG",
+          "date": "Fri 26 Jun"
+        }
+      ],
+      "price": "AED 2,000.00"
+    },
+    {
+      "segments": [
+        {
+          "airline": "Emirates",
+          "flightNumber": "EK 234",
+          "departureTime": "9:45 AM",
+          "arrivalTime": "12:45 PM",
+          "route": "LAX - JFK",
+          "duration": "3h 00min",
+          "stops": "Non stop",
+          "logo": "EMIRATES_IMG",
+          "date": "Thu 25 Jun"
+        },
+        {
+          "airline": "Lufthansa",
+          "flightNumber": "LH 234",
+          "departureTime": "2:30 PM",
+          "arrivalTime": "5:30 PM",
+          "route": "JFK - LAX",
+          "duration": "3h 00min",
+          "stops": "Non stop",
+          "logo": "LUFTHANASA_IMG",
           "date": "Thu 25 Jun"
         }
       ],
@@ -61,58 +197,55 @@
       "segments": [
         {
           "airline": "Emirates",
-          "flightNumber": "AT 4334",
-          "departureTime": "9:45 AM",
-          "arrivalTime": "11:45 AM",
-          "route": "CDG - DXB",
-          "duration": "2h 10min",
+          "flightNumber": "EK 678",
+          "departureTime": "9:00 AM",
+          "arrivalTime": "11:00 AM",
+          "route": "LAX - DXB",
+          "duration": "16h 00min",
           "stops": "Non stop",
           "logo": "EMIRATES_IMG",
           "date": "Thu 25 Jun"
         },
         {
           "airline": "Lufthansa",
-          "flightNumber": "AT 4334",
-          "departureTime": "11:45 PM",
-          "arrivalTime": "6:45 AM",
-          "arrivalOffset": "+1 day",
-          "route": "DXB - CDG",
-          "duration": "4h 10min",
-          "stops": "2 stops",
-          "stopDetails": "6h 32m in Lisbon, Paris ",
+          "flightNumber": "LH 123",
+          "departureTime": "1:30 PM",
+          "arrivalTime": "10:30 PM",
+          "route": "DXB - LAX",
+          "duration": "15h 00min",
+          "stops": "Non stop",
           "logo": "LUFTHANASA_IMG",
           "date": "Thu 25 Jun"
         }
       ],
-      "price": "AED 2,456.90"
+      "price": "AED 4,500.00"
     },
     {
       "segments": [
         {
           "airline": "Emirates",
-          "flightNumber": "AT 4334",
-          "departureTime": "9:45 AM",
-          "arrivalTime": "11:45 AM",
-          "route": "CDG - DXB",
-          "duration": "7h 10min",
-          "stops": "1 stop",
+          "flightNumber": "EK 678",
+          "departureTime": "9:00 AM",
+          "arrivalTime": "11:00 AM",
+          "route": "HND - CDG",
+          "duration": "16h 00min",
+          "stops": "Non stop",
           "logo": "EMIRATES_IMG",
           "date": "Thu 25 Jun"
         },
         {
           "airline": "Lufthansa",
-          "flightNumber": "AT 4334",
-          "departureTime": "11:45 PM",
-          "arrivalTime": "6:45 AM",
-          "arrivalOffset": "+1 day",
-          "route": "DXB - CDG",
-          "duration": "4h 10min",
+          "flightNumber": "LH 123",
+          "departureTime": "1:30 PM",
+          "arrivalTime": "10:30 PM",
+          "route": "CDG - HND",
+          "duration": "15h 00min",
           "stops": "Non stop",
-          "logo": "LUFTHANASA2_IMG",
+          "logo": "LUFTHANASA_IMG",
           "date": "Thu 25 Jun"
         }
       ],
-      "price": "AED 1,456.90"
+      "price": "AED 4,500.00"
     }
   ]
 }

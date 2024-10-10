@@ -5,7 +5,7 @@ import { ClockIconIcon } from '@/components/icon/Icon';
 import LUFTHANASA2_IMG from "@/assets/images/lufthansa-2.jpg";
 
 interface SidebarProps {
-  selectedFlight: any;
+  selectedFlight: string;
   onClose: () => void;
 }
 

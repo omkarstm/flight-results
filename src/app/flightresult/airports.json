@@ -1,0 +1,26 @@
+[
+  {
+    "code": "CDG",
+    "name": "Paris CDG"
+  },
+  {
+    "code": "DXB",
+    "name": "Dubai Int."
+  },
+  {
+    "code": "LAX",
+    "name": "Los Angeles"
+  },
+  {
+    "code": "JFK",
+    "name": "New York JFK"
+  },
+  {
+    "code": "HND",
+    "name": "Tokyo Haneda"
+  },
+  {
+    "code": "MEX",
+    "name": "Mexico City"
+  }
+]

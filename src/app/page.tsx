@@ -34,8 +34,15 @@ export default function Home() {
                 departureDate={departureDate}
                 setDepartureDate={setDepartureDate}
                 returnDate={returnDate}
-                setReturnDate={setReturnDate}
-              />
+                setReturnDate={setReturnDate} setInteractingWithWidget={function (): void {
+                  throw new Error("Function not implemented.");
+                }} setLoading={function (): void {
+                  throw new Error("Function not implemented.");
+                }} setShowSearchForm={function (): void {
+                  throw new Error("Function not implemented.");
+                }} handle={function (): void {
+                  throw new Error("Function not implemented.");
+                }} />
             </Card>
           </div>
         </div>

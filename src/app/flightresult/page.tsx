@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import HeadSection from './component/Head';
 import BodySection from './component/Body';
 import LoadingModal from '@/components/ui/loadingModal';
@@ -20,6 +20,7 @@ const FlightResultPage = () => {
   }, [currentStep]);
 
   return (
+    <Suspense>
     <div className="relative min-h-screen">
       <HeadSection loading={loading} setLoading={setLoading} />
       <BodySection loading={loading} />
@@ -28,6 +29,7 @@ const FlightResultPage = () => {
         <LoadingModal currentStep={currentStep} setCurrentStep={setCurrentStep} />
       )}
     </div>
+    </Suspense>
   );
 };
 

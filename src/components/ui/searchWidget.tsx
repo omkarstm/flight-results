@@ -7,7 +7,7 @@ import { Calendar as CalendarIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import Link from "next/link";
+import airports from "../../app/flightresult/airports.json"
 
 interface SearchWidgetProps {
   fromValue: string;
@@ -21,7 +21,7 @@ interface SearchWidgetProps {
   setInteractingWithWidget: React.Dispatch<React.SetStateAction<boolean>>;
   setLoading: (loading: boolean) => void;
   setShowSearchForm: (show: boolean) => void;  // Prop to handle closing the search form
-  handle:(value:boolean) => void
+  handle: (value: boolean) => void
 }
 
 const SearchWidget: React.FC<SearchWidgetProps> = ({
@@ -39,34 +39,43 @@ const SearchWidget: React.FC<SearchWidgetProps> = ({
 }) => {
   const handleSearchClick = () => {
     // Set loading to true and hide the search widget
-    setLoading(true);
-    setShowSearchForm(false);  // Hide the search widget when the search button is clicked
+    if (setLoading) setLoading(true);
+    if (setShowSearchForm) setShowSearchForm(false);  // Hide the search widget when the search button is clicked
 
     // Simulate loading for 5 seconds and reset loading state
     setTimeout(() => {
-      setLoading(false);
+      if (setLoading) setLoading(false);
     }, 5000);
+
+    window.location.href = `flightresult?from=${fromValue}&to=${toValue}&returnDate=${(returnDate || new Date())?.getTime()}&departureDate=${(departureDate || new Date())?.getTime()}`
   };
+
+  const getPlaceName = (code: string) => {
+    if (code) return airports.find((airport) => airport.code === code)?.name
+    else return ""
+  }
 
   return (
     <>
       <div
         className="flex gap-4 mt-5"
-        onMouseEnter={() => setInteractingWithWidget(true)}
-        onMouseLeave={() => setInteractingWithWidget(false)}
+        onMouseEnter={() => setInteractingWithWidget && setInteractingWithWidget(true)}
+        onMouseLeave={() => setInteractingWithWidget && setInteractingWithWidget(false)}
       >
         <div className="flex gap-4 w-3/5">
           <Select onValueChange={(value) => setFromValue(value)}>
             <SelectTrigger isSelected={!!fromValue} className="focus:outline-none">
               <div className="flex flex-col items-start">
                 <span className={`text-[#484A4D]-400 ${fromValue ? "text-[12px] text-[#787B80] font-[500]" : ""}`}>Where from?</span>
-                {fromValue && <span className="text-black">{fromValue}</span>}
+                {fromValue && <span className="text-black">{fromValue} - {getPlaceName(fromValue)}</span>}
               </div>
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="New York">New York</SelectItem>
-              <SelectItem value="Los Angeles">Los Angeles</SelectItem>
-              <SelectItem value="Chicago">Chicago</SelectItem>
+              {
+                airports.filter((i)=> i.code !== toValue).map((i) => (
+                  <SelectItem key={i.code} value={i.code}>{i.name}</SelectItem>
+                ))
+              }
             </SelectContent>
           </Select>
           <Button variant={"secondary"} className="rounded-full text-dark h-12 px-[15px]">
@@ -76,13 +85,15 @@ const SearchWidget: React.FC<SearchWidgetProps> = ({
             <SelectTrigger isSelected={!!toValue}>
               <div className="flex flex-col items-start">
                 <span className={`text-[#484A4D]-400 ${toValue ? "text-[12px] text-[#787B80] font-[500]" : ""}`}>Where to?</span>
-                {toValue && <span className="text-black">{toValue}</span>}
+                {toValue && <span className="text-black">{toValue} - {getPlaceName(toValue)}</span>}
               </div>
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="London">London</SelectItem>
-              <SelectItem value="Paris">Paris</SelectItem>
-              <SelectItem value="Tokyo">Tokyo</SelectItem>
+              {
+                airports.filter((i)=> i.code !== fromValue).map((i) => (
+                  <SelectItem key={i.code} value={i.code}>{i.name}</SelectItem>
+                ))
+              }
             </SelectContent>
           </Select>
         </div>
@@ -125,12 +136,10 @@ const SearchWidget: React.FC<SearchWidgetProps> = ({
         </div>
       </div>
       <div className="flex justify-end mt-9">
-        <Link href={'flightresult'}>
-          <Button className="flex items-center space-x-2 h-10" onClick={handleSearchClick}>
+          <Button disabled={!fromValue || !toValue} className="flex items-center space-x-2 h-10" onClick={handleSearchClick}>
             <SearchIcon />
             <span>Search flights</span>
           </Button>
-        </Link>
       </div>
     </>
   );
